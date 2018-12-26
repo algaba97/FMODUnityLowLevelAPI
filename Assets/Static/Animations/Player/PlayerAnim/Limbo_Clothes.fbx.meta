@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: b8620456e51ccc24685a5a05b3c1c545
+timeCreated: 1525432681
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Goggles
+    100002: Hat
+    100004: Limbo_Chest_SKIN_Bind
+    100006: //RootNode
+    100008: Limbo_Joint_Bind_GRP
+    100010: Limbo_Joint_Bind_GRP_Final
+    100012: Limbo_Joint_Bind_Scale_GRP
+    100014: Limbo_L_Calvicle_Key_SKIN_Bind
+    100016: Limbo_L_Calvicle_SKIN_Bind
+    100018: Limbo_L_Result_Ankle_ctrl_SKIN_Bind
+    100020: Limbo_L_Result_Arm_ctrl_SKIN_Bind
+    100022: Limbo_L_Result_Ball_ctrl_SKIN_Bind
+    100024: Limbo_L_Result_Hip_ctrl_SKIN_Bind
+    100026: Limbo_L_Result_Knee_ctrl_SKIN_Bind
+    100028: Limbo_L_Result_Toe_ctrl_SKIN_Bind
+    100030: Limbo_Neck1_SKIN_Bind
+    100032: Limbo_Neck2_SKIN_Bind
+    100034: Limbo_Neck3_SKIN_Bind
+    100036: Limbo_Neck_Start_SKIN_Bind
+    100038: Limbo_R_Calvicle_Key_SKIN_Bind
+    100040: Limbo_R_Calvicle_SKIN_Bind
+    100042: Limbo_R_Result_Ankle_ctrl_SKIN_Bind
+    100044: Limbo_R_Result_Arm_ctrl_SKIN_Bind
+    100046: Limbo_R_Result_Ball_ctrl_SKIN_Bind
+    100048: Limbo_R_Result_Hip_ctrl_SKIN_Bind
+    100050: Limbo_R_Result_Knee_ctrl_SKIN_Bind
+    100052: Limbo_R_Result_Toe_ctrl_SKIN_Bind
+    100054: Limbo_Root_SKIN_Bind
+    100056: Limbo_Spine1_SKIN_Bind
+    100058: Limbo_Spine2_SKIN_Bind
+    100060: Limbo_Spine3_SKIN_Bind
+    100062: Limbo_Spine4_SKIN_Bind
+    100064: Limbo_Spine5_SKIN_Bind
+    100066: Limbo_Spine6_SKIN_Bind
+    100068: Overalls
+    100070: transform1
+    400000: Goggles
+    400002: Hat
+    400004: Limbo_Chest_SKIN_Bind
+    400006: //RootNode
+    400008: Limbo_Joint_Bind_GRP
+    400010: Limbo_Joint_Bind_GRP_Final
+    400012: Limbo_Joint_Bind_Scale_GRP
+    400014: Limbo_L_Calvicle_Key_SKIN_Bind
+    400016: Limbo_L_Calvicle_SKIN_Bind
+    400018: Limbo_L_Result_Ankle_ctrl_SKIN_Bind
+    400020: Limbo_L_Result_Arm_ctrl_SKIN_Bind
+    400022: Limbo_L_Result_Ball_ctrl_SKIN_Bind
+    400024: Limbo_L_Result_Hip_ctrl_SKIN_Bind
+    400026: Limbo_L_Result_Knee_ctrl_SKIN_Bind
+    400028: Limbo_L_Result_Toe_ctrl_SKIN_Bind
+    400030: Limbo_Neck1_SKIN_Bind
+    400032: Limbo_Neck2_SKIN_Bind
+    400034: Limbo_Neck3_SKIN_Bind
+    400036: Limbo_Neck_Start_SKIN_Bind
+    400038: Limbo_R_Calvicle_Key_SKIN_Bind
+    400040: Limbo_R_Calvicle_SKIN_Bind
+    400042: Limbo_R_Result_Ankle_ctrl_SKIN_Bind
+    400044: Limbo_R_Result_Arm_ctrl_SKIN_Bind
+    400046: Limbo_R_Result_Ball_ctrl_SKIN_Bind
+    400048: Limbo_R_Result_Hip_ctrl_SKIN_Bind
+    400050: Limbo_R_Result_Knee_ctrl_SKIN_Bind
+    400052: Limbo_R_Result_Toe_ctrl_SKIN_Bind
+    400054: Limbo_Root_SKIN_Bind
+    400056: Limbo_Spine1_SKIN_Bind
+    400058: Limbo_Spine2_SKIN_Bind
+    400060: Limbo_Spine3_SKIN_Bind
+    400062: Limbo_Spine4_SKIN_Bind
+    400064: Limbo_Spine5_SKIN_Bind
+    400066: Limbo_Spine6_SKIN_Bind
+    400068: Overalls
+    400070: transform1
+    2300000: Goggles
+    2300002: Hat
+    3300000: Goggles
+    3300002: Hat
+    4300000: Goggles
+    4300002: Hat
+    4300004: Overalls
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Overalls
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlayerGoggles
+    second: {fileID: 2100000, guid: 37736921f2a9e8349bef8e5b551fce61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlayerHat
+    second: {fileID: 2100000, guid: 329fd1b34a4f6bf48ba07f4092593de1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 09b02c38ae92faa408a446c4d6a5c4b1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

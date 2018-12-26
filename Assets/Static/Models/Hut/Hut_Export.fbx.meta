@@ -1,0 +1,1145 @@
+fileFormatVersion: 2
+guid: 8b3106a78530421458860e38cb00d196
+timeCreated: 1524226206
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Base
+    100002: Fence
+    100004: Fence_Reversed
+    100006: Grass
+    100008: Grass 1
+    100010: Grass 2
+    100012: Grass 3
+    100014: Grass 4
+    100016: Grass1
+    100018: Grass1 1
+    100020: Grass1 2
+    100022: Grass1 3
+    100024: Grass1 4
+    100026: Grass10
+    100028: Grass10 1
+    100030: Grass10 2
+    100032: Grass10 3
+    100034: Grass10 4
+    100036: Grass11
+    100038: Grass11 1
+    100040: Grass11 2
+    100042: Grass11 3
+    100044: Grass11 4
+    100046: Grass12
+    100048: Grass12 1
+    100050: Grass12 2
+    100052: Grass12 3
+    100054: Grass13
+    100056: Grass13 1
+    100058: Grass13 2
+    100060: Grass14
+    100062: Grass14 1
+    100064: Grass14 2
+    100066: Grass14 3
+    100068: Grass14 4
+    100070: Grass15
+    100072: Grass15 1
+    100074: Grass15 2
+    100076: Grass15 3
+    100078: Grass16
+    100080: Grass16 1
+    100082: Grass16 2
+    100084: Grass16 3
+    100086: Grass16 4
+    100088: Grass17
+    100090: Grass17 1
+    100092: Grass17 2
+    100094: Grass17 3
+    100096: Grass17 4
+    100098: Grass18
+    100100: Grass18 1
+    100102: Grass18 2
+    100104: Grass18 3
+    100106: Grass19
+    100108: Grass19 1
+    100110: Grass19 2
+    100112: Grass19 3
+    100114: Grass19 4
+    100116: Grass2
+    100118: Grass2 1
+    100120: Grass2 2
+    100122: Grass2 3
+    100124: Grass2 4
+    100126: Grass20
+    100128: Grass20 1
+    100130: Grass20 2
+    100132: Grass20 3
+    100134: Grass20 4
+    100136: Grass21
+    100138: Grass21 1
+    100140: Grass21 2
+    100142: Grass21 3
+    100144: Grass22
+    100146: Grass22 1
+    100148: Grass22 2
+    100150: Grass22 3
+    100152: Grass22 4
+    100154: Grass23
+    100156: Grass23 1
+    100158: Grass23 2
+    100160: Grass23 3
+    100162: Grass24
+    100164: Grass24 1
+    100166: Grass24 2
+    100168: Grass25
+    100170: Grass25 1
+    100172: Grass25 2
+    100174: Grass25 3
+    100176: Grass25 4
+    100178: Grass26
+    100180: Grass26 1
+    100182: Grass26 2
+    100184: Grass26 3
+    100186: Grass27
+    100188: Grass27 1
+    100190: Grass27 2
+    100192: Grass27 3
+    100194: Grass27 4
+    100196: Grass28
+    100198: Grass28 1
+    100200: Grass28 2
+    100202: Grass28 3
+    100204: Grass29
+    100206: Grass29 1
+    100208: Grass29 2
+    100210: Grass29 3
+    100212: Grass29 4
+    100214: Grass3
+    100216: Grass3 1
+    100218: Grass3 2
+    100220: Grass30
+    100222: Grass30 1
+    100224: Grass30 2
+    100226: Grass30 3
+    100228: Grass31
+    100230: Grass31 1
+    100232: Grass31 2
+    100234: Grass31 3
+    100236: Grass31 4
+    100238: Grass32
+    100240: Grass32 1
+    100242: Grass32 2
+    100244: Grass32 3
+    100246: Grass32 4
+    100248: Grass33
+    100250: Grass33 1
+    100252: Grass33 2
+    100254: Grass33 3
+    100256: Grass33 4
+    100258: Grass34
+    100260: Grass34 1
+    100262: Grass34 2
+    100264: Grass34 3
+    100266: Grass35
+    100268: Grass35 1
+    100270: Grass35 2
+    100272: Grass35 3
+    100274: Grass35 4
+    100276: Grass36
+    100278: Grass36 1
+    100280: Grass36 2
+    100282: Grass36 3
+    100284: Grass36 4
+    100286: Grass37
+    100288: Grass37 1
+    100290: Grass37 2
+    100292: Grass37 3
+    100294: Grass38
+    100296: Grass38 1
+    100298: Grass38 2
+    100300: Grass38 3
+    100302: Grass39
+    100304: Grass39 1
+    100306: Grass39 2
+    100308: Grass39 3
+    100310: Grass39 4
+    100312: Grass4
+    100314: Grass4 1
+    100316: Grass4 2
+    100318: Grass4 3
+    100320: Grass4 4
+    100322: Grass40
+    100324: Grass41
+    100326: Grass42
+    100328: Grass43
+    100330: Grass44
+    100332: Grass45
+    100334: Grass46
+    100336: Grass47
+    100338: Grass48
+    100340: Grass49
+    100342: Grass5
+    100344: Grass5 1
+    100346: Grass5 2
+    100348: Grass5 3
+    100350: Grass5 4
+    100352: Grass50
+    100354: Grass51
+    100356: Grass52
+    100358: Grass53
+    100360: Grass54
+    100362: Grass55
+    100364: Grass56
+    100366: Grass57
+    100368: Grass58
+    100370: Grass59
+    100372: Grass6
+    100374: Grass6 1
+    100376: Grass6 2
+    100378: Grass6 3
+    100380: Grass60
+    100382: Grass61
+    100384: Grass7
+    100386: Grass7 1
+    100388: Grass7 2
+    100390: Grass7 3
+    100392: Grass8
+    100394: Grass8 1
+    100396: Grass8 2
+    100398: Grass8 3
+    100400: Grass8 4
+    100402: Grass9
+    100404: Grass9 1
+    100406: Grass9 2
+    100408: Grass9 3
+    100410: Grass_GRP
+    100412: Grass_GRP1
+    100414: Grass_GRP2
+    100416: Grass_GRP3
+    100418: Grass_GRP4
+    100420: Hut
+    100422: //RootNode
+    100424: HutController
+    100426: TopGrass
+    400000: Base
+    400002: Fence
+    400004: Fence_Reversed
+    400006: Grass
+    400008: Grass 1
+    400010: Grass 2
+    400012: Grass 3
+    400014: Grass 4
+    400016: Grass1
+    400018: Grass1 1
+    400020: Grass1 2
+    400022: Grass1 3
+    400024: Grass1 4
+    400026: Grass10
+    400028: Grass10 1
+    400030: Grass10 2
+    400032: Grass10 3
+    400034: Grass10 4
+    400036: Grass11
+    400038: Grass11 1
+    400040: Grass11 2
+    400042: Grass11 3
+    400044: Grass11 4
+    400046: Grass12
+    400048: Grass12 1
+    400050: Grass12 2
+    400052: Grass12 3
+    400054: Grass13
+    400056: Grass13 1
+    400058: Grass13 2
+    400060: Grass14
+    400062: Grass14 1
+    400064: Grass14 2
+    400066: Grass14 3
+    400068: Grass14 4
+    400070: Grass15
+    400072: Grass15 1
+    400074: Grass15 2
+    400076: Grass15 3
+    400078: Grass16
+    400080: Grass16 1
+    400082: Grass16 2
+    400084: Grass16 3
+    400086: Grass16 4
+    400088: Grass17
+    400090: Grass17 1
+    400092: Grass17 2
+    400094: Grass17 3
+    400096: Grass17 4
+    400098: Grass18
+    400100: Grass18 1
+    400102: Grass18 2
+    400104: Grass18 3
+    400106: Grass19
+    400108: Grass19 1
+    400110: Grass19 2
+    400112: Grass19 3
+    400114: Grass19 4
+    400116: Grass2
+    400118: Grass2 1
+    400120: Grass2 2
+    400122: Grass2 3
+    400124: Grass2 4
+    400126: Grass20
+    400128: Grass20 1
+    400130: Grass20 2
+    400132: Grass20 3
+    400134: Grass20 4
+    400136: Grass21
+    400138: Grass21 1
+    400140: Grass21 2
+    400142: Grass21 3
+    400144: Grass22
+    400146: Grass22 1
+    400148: Grass22 2
+    400150: Grass22 3
+    400152: Grass22 4
+    400154: Grass23
+    400156: Grass23 1
+    400158: Grass23 2
+    400160: Grass23 3
+    400162: Grass24
+    400164: Grass24 1
+    400166: Grass24 2
+    400168: Grass25
+    400170: Grass25 1
+    400172: Grass25 2
+    400174: Grass25 3
+    400176: Grass25 4
+    400178: Grass26
+    400180: Grass26 1
+    400182: Grass26 2
+    400184: Grass26 3
+    400186: Grass27
+    400188: Grass27 1
+    400190: Grass27 2
+    400192: Grass27 3
+    400194: Grass27 4
+    400196: Grass28
+    400198: Grass28 1
+    400200: Grass28 2
+    400202: Grass28 3
+    400204: Grass29
+    400206: Grass29 1
+    400208: Grass29 2
+    400210: Grass29 3
+    400212: Grass29 4
+    400214: Grass3
+    400216: Grass3 1
+    400218: Grass3 2
+    400220: Grass30
+    400222: Grass30 1
+    400224: Grass30 2
+    400226: Grass30 3
+    400228: Grass31
+    400230: Grass31 1
+    400232: Grass31 2
+    400234: Grass31 3
+    400236: Grass31 4
+    400238: Grass32
+    400240: Grass32 1
+    400242: Grass32 2
+    400244: Grass32 3
+    400246: Grass32 4
+    400248: Grass33
+    400250: Grass33 1
+    400252: Grass33 2
+    400254: Grass33 3
+    400256: Grass33 4
+    400258: Grass34
+    400260: Grass34 1
+    400262: Grass34 2
+    400264: Grass34 3
+    400266: Grass35
+    400268: Grass35 1
+    400270: Grass35 2
+    400272: Grass35 3
+    400274: Grass35 4
+    400276: Grass36
+    400278: Grass36 1
+    400280: Grass36 2
+    400282: Grass36 3
+    400284: Grass36 4
+    400286: Grass37
+    400288: Grass37 1
+    400290: Grass37 2
+    400292: Grass37 3
+    400294: Grass38
+    400296: Grass38 1
+    400298: Grass38 2
+    400300: Grass38 3
+    400302: Grass39
+    400304: Grass39 1
+    400306: Grass39 2
+    400308: Grass39 3
+    400310: Grass39 4
+    400312: Grass4
+    400314: Grass4 1
+    400316: Grass4 2
+    400318: Grass4 3
+    400320: Grass4 4
+    400322: Grass40
+    400324: Grass41
+    400326: Grass42
+    400328: Grass43
+    400330: Grass44
+    400332: Grass45
+    400334: Grass46
+    400336: Grass47
+    400338: Grass48
+    400340: Grass49
+    400342: Grass5
+    400344: Grass5 1
+    400346: Grass5 2
+    400348: Grass5 3
+    400350: Grass5 4
+    400352: Grass50
+    400354: Grass51
+    400356: Grass52
+    400358: Grass53
+    400360: Grass54
+    400362: Grass55
+    400364: Grass56
+    400366: Grass57
+    400368: Grass58
+    400370: Grass59
+    400372: Grass6
+    400374: Grass6 1
+    400376: Grass6 2
+    400378: Grass6 3
+    400380: Grass60
+    400382: Grass61
+    400384: Grass7
+    400386: Grass7 1
+    400388: Grass7 2
+    400390: Grass7 3
+    400392: Grass8
+    400394: Grass8 1
+    400396: Grass8 2
+    400398: Grass8 3
+    400400: Grass8 4
+    400402: Grass9
+    400404: Grass9 1
+    400406: Grass9 2
+    400408: Grass9 3
+    400410: Grass_GRP
+    400412: Grass_GRP1
+    400414: Grass_GRP2
+    400416: Grass_GRP3
+    400418: Grass_GRP4
+    400420: Hut
+    400422: //RootNode
+    400424: HutController
+    400426: TopGrass
+    2300000: Base
+    2300002: Fence
+    2300004: Fence_Reversed
+    2300006: Grass
+    2300008: Grass 1
+    2300010: Grass 2
+    2300012: Grass 3
+    2300014: Grass 4
+    2300016: Grass1
+    2300018: Grass1 1
+    2300020: Grass1 2
+    2300022: Grass1 3
+    2300024: Grass1 4
+    2300026: Grass10
+    2300028: Grass10 1
+    2300030: Grass10 2
+    2300032: Grass10 3
+    2300034: Grass10 4
+    2300036: Grass11
+    2300038: Grass11 1
+    2300040: Grass11 2
+    2300042: Grass11 3
+    2300044: Grass11 4
+    2300046: Grass12
+    2300048: Grass12 1
+    2300050: Grass12 2
+    2300052: Grass12 3
+    2300054: Grass13
+    2300056: Grass13 1
+    2300058: Grass13 2
+    2300060: Grass14
+    2300062: Grass14 1
+    2300064: Grass14 2
+    2300066: Grass14 3
+    2300068: Grass14 4
+    2300070: Grass15
+    2300072: Grass15 1
+    2300074: Grass15 2
+    2300076: Grass15 3
+    2300078: Grass16
+    2300080: Grass16 1
+    2300082: Grass16 2
+    2300084: Grass16 3
+    2300086: Grass16 4
+    2300088: Grass17
+    2300090: Grass17 1
+    2300092: Grass17 2
+    2300094: Grass17 3
+    2300096: Grass17 4
+    2300098: Grass18
+    2300100: Grass18 1
+    2300102: Grass18 2
+    2300104: Grass18 3
+    2300106: Grass19
+    2300108: Grass19 1
+    2300110: Grass19 2
+    2300112: Grass19 3
+    2300114: Grass19 4
+    2300116: Grass2
+    2300118: Grass2 1
+    2300120: Grass2 2
+    2300122: Grass2 3
+    2300124: Grass2 4
+    2300126: Grass20
+    2300128: Grass20 1
+    2300130: Grass20 2
+    2300132: Grass20 3
+    2300134: Grass20 4
+    2300136: Grass21
+    2300138: Grass21 1
+    2300140: Grass21 2
+    2300142: Grass21 3
+    2300144: Grass22
+    2300146: Grass22 1
+    2300148: Grass22 2
+    2300150: Grass22 3
+    2300152: Grass22 4
+    2300154: Grass23
+    2300156: Grass23 1
+    2300158: Grass23 2
+    2300160: Grass23 3
+    2300162: Grass24
+    2300164: Grass24 1
+    2300166: Grass24 2
+    2300168: Grass25
+    2300170: Grass25 1
+    2300172: Grass25 2
+    2300174: Grass25 3
+    2300176: Grass25 4
+    2300178: Grass26
+    2300180: Grass26 1
+    2300182: Grass26 2
+    2300184: Grass26 3
+    2300186: Grass27
+    2300188: Grass27 1
+    2300190: Grass27 2
+    2300192: Grass27 3
+    2300194: Grass27 4
+    2300196: Grass28
+    2300198: Grass28 1
+    2300200: Grass28 2
+    2300202: Grass28 3
+    2300204: Grass29
+    2300206: Grass29 1
+    2300208: Grass29 2
+    2300210: Grass29 3
+    2300212: Grass29 4
+    2300214: Grass3
+    2300216: Grass3 1
+    2300218: Grass3 2
+    2300220: Grass30
+    2300222: Grass30 1
+    2300224: Grass30 2
+    2300226: Grass30 3
+    2300228: Grass31
+    2300230: Grass31 1
+    2300232: Grass31 2
+    2300234: Grass31 3
+    2300236: Grass31 4
+    2300238: Grass32
+    2300240: Grass32 1
+    2300242: Grass32 2
+    2300244: Grass32 3
+    2300246: Grass32 4
+    2300248: Grass33
+    2300250: Grass33 1
+    2300252: Grass33 2
+    2300254: Grass33 3
+    2300256: Grass33 4
+    2300258: Grass34
+    2300260: Grass34 1
+    2300262: Grass34 2
+    2300264: Grass34 3
+    2300266: Grass35
+    2300268: Grass35 1
+    2300270: Grass35 2
+    2300272: Grass35 3
+    2300274: Grass35 4
+    2300276: Grass36
+    2300278: Grass36 1
+    2300280: Grass36 2
+    2300282: Grass36 3
+    2300284: Grass36 4
+    2300286: Grass37
+    2300288: Grass37 1
+    2300290: Grass37 2
+    2300292: Grass37 3
+    2300294: Grass38
+    2300296: Grass38 1
+    2300298: Grass38 2
+    2300300: Grass38 3
+    2300302: Grass39
+    2300304: Grass39 1
+    2300306: Grass39 2
+    2300308: Grass39 3
+    2300310: Grass39 4
+    2300312: Grass4
+    2300314: Grass4 1
+    2300316: Grass4 2
+    2300318: Grass4 3
+    2300320: Grass4 4
+    2300322: Grass40
+    2300324: Grass41
+    2300326: Grass42
+    2300328: Grass43
+    2300330: Grass44
+    2300332: Grass45
+    2300334: Grass46
+    2300336: Grass47
+    2300338: Grass48
+    2300340: Grass49
+    2300342: Grass5
+    2300344: Grass5 1
+    2300346: Grass5 2
+    2300348: Grass5 3
+    2300350: Grass5 4
+    2300352: Grass50
+    2300354: Grass51
+    2300356: Grass52
+    2300358: Grass53
+    2300360: Grass54
+    2300362: Grass55
+    2300364: Grass56
+    2300366: Grass57
+    2300368: Grass58
+    2300370: Grass59
+    2300372: Grass6
+    2300374: Grass6 1
+    2300376: Grass6 2
+    2300378: Grass6 3
+    2300380: Grass60
+    2300382: Grass61
+    2300384: Grass7
+    2300386: Grass7 1
+    2300388: Grass7 2
+    2300390: Grass7 3
+    2300392: Grass8
+    2300394: Grass8 1
+    2300396: Grass8 2
+    2300398: Grass8 3
+    2300400: Grass8 4
+    2300402: Grass9
+    2300404: Grass9 1
+    2300406: Grass9 2
+    2300408: Grass9 3
+    3300000: Base
+    3300002: Fence
+    3300004: Fence_Reversed
+    3300006: Grass
+    3300008: Grass 1
+    3300010: Grass 2
+    3300012: Grass 3
+    3300014: Grass 4
+    3300016: Grass1
+    3300018: Grass1 1
+    3300020: Grass1 2
+    3300022: Grass1 3
+    3300024: Grass1 4
+    3300026: Grass10
+    3300028: Grass10 1
+    3300030: Grass10 2
+    3300032: Grass10 3
+    3300034: Grass10 4
+    3300036: Grass11
+    3300038: Grass11 1
+    3300040: Grass11 2
+    3300042: Grass11 3
+    3300044: Grass11 4
+    3300046: Grass12
+    3300048: Grass12 1
+    3300050: Grass12 2
+    3300052: Grass12 3
+    3300054: Grass13
+    3300056: Grass13 1
+    3300058: Grass13 2
+    3300060: Grass14
+    3300062: Grass14 1
+    3300064: Grass14 2
+    3300066: Grass14 3
+    3300068: Grass14 4
+    3300070: Grass15
+    3300072: Grass15 1
+    3300074: Grass15 2
+    3300076: Grass15 3
+    3300078: Grass16
+    3300080: Grass16 1
+    3300082: Grass16 2
+    3300084: Grass16 3
+    3300086: Grass16 4
+    3300088: Grass17
+    3300090: Grass17 1
+    3300092: Grass17 2
+    3300094: Grass17 3
+    3300096: Grass17 4
+    3300098: Grass18
+    3300100: Grass18 1
+    3300102: Grass18 2
+    3300104: Grass18 3
+    3300106: Grass19
+    3300108: Grass19 1
+    3300110: Grass19 2
+    3300112: Grass19 3
+    3300114: Grass19 4
+    3300116: Grass2
+    3300118: Grass2 1
+    3300120: Grass2 2
+    3300122: Grass2 3
+    3300124: Grass2 4
+    3300126: Grass20
+    3300128: Grass20 1
+    3300130: Grass20 2
+    3300132: Grass20 3
+    3300134: Grass20 4
+    3300136: Grass21
+    3300138: Grass21 1
+    3300140: Grass21 2
+    3300142: Grass21 3
+    3300144: Grass22
+    3300146: Grass22 1
+    3300148: Grass22 2
+    3300150: Grass22 3
+    3300152: Grass22 4
+    3300154: Grass23
+    3300156: Grass23 1
+    3300158: Grass23 2
+    3300160: Grass23 3
+    3300162: Grass24
+    3300164: Grass24 1
+    3300166: Grass24 2
+    3300168: Grass25
+    3300170: Grass25 1
+    3300172: Grass25 2
+    3300174: Grass25 3
+    3300176: Grass25 4
+    3300178: Grass26
+    3300180: Grass26 1
+    3300182: Grass26 2
+    3300184: Grass26 3
+    3300186: Grass27
+    3300188: Grass27 1
+    3300190: Grass27 2
+    3300192: Grass27 3
+    3300194: Grass27 4
+    3300196: Grass28
+    3300198: Grass28 1
+    3300200: Grass28 2
+    3300202: Grass28 3
+    3300204: Grass29
+    3300206: Grass29 1
+    3300208: Grass29 2
+    3300210: Grass29 3
+    3300212: Grass29 4
+    3300214: Grass3
+    3300216: Grass3 1
+    3300218: Grass3 2
+    3300220: Grass30
+    3300222: Grass30 1
+    3300224: Grass30 2
+    3300226: Grass30 3
+    3300228: Grass31
+    3300230: Grass31 1
+    3300232: Grass31 2
+    3300234: Grass31 3
+    3300236: Grass31 4
+    3300238: Grass32
+    3300240: Grass32 1
+    3300242: Grass32 2
+    3300244: Grass32 3
+    3300246: Grass32 4
+    3300248: Grass33
+    3300250: Grass33 1
+    3300252: Grass33 2
+    3300254: Grass33 3
+    3300256: Grass33 4
+    3300258: Grass34
+    3300260: Grass34 1
+    3300262: Grass34 2
+    3300264: Grass34 3
+    3300266: Grass35
+    3300268: Grass35 1
+    3300270: Grass35 2
+    3300272: Grass35 3
+    3300274: Grass35 4
+    3300276: Grass36
+    3300278: Grass36 1
+    3300280: Grass36 2
+    3300282: Grass36 3
+    3300284: Grass36 4
+    3300286: Grass37
+    3300288: Grass37 1
+    3300290: Grass37 2
+    3300292: Grass37 3
+    3300294: Grass38
+    3300296: Grass38 1
+    3300298: Grass38 2
+    3300300: Grass38 3
+    3300302: Grass39
+    3300304: Grass39 1
+    3300306: Grass39 2
+    3300308: Grass39 3
+    3300310: Grass39 4
+    3300312: Grass4
+    3300314: Grass4 1
+    3300316: Grass4 2
+    3300318: Grass4 3
+    3300320: Grass4 4
+    3300322: Grass40
+    3300324: Grass41
+    3300326: Grass42
+    3300328: Grass43
+    3300330: Grass44
+    3300332: Grass45
+    3300334: Grass46
+    3300336: Grass47
+    3300338: Grass48
+    3300340: Grass49
+    3300342: Grass5
+    3300344: Grass5 1
+    3300346: Grass5 2
+    3300348: Grass5 3
+    3300350: Grass5 4
+    3300352: Grass50
+    3300354: Grass51
+    3300356: Grass52
+    3300358: Grass53
+    3300360: Grass54
+    3300362: Grass55
+    3300364: Grass56
+    3300366: Grass57
+    3300368: Grass58
+    3300370: Grass59
+    3300372: Grass6
+    3300374: Grass6 1
+    3300376: Grass6 2
+    3300378: Grass6 3
+    3300380: Grass60
+    3300382: Grass61
+    3300384: Grass7
+    3300386: Grass7 1
+    3300388: Grass7 2
+    3300390: Grass7 3
+    3300392: Grass8
+    3300394: Grass8 1
+    3300396: Grass8 2
+    3300398: Grass8 3
+    3300400: Grass8 4
+    3300402: Grass9
+    3300404: Grass9 1
+    3300406: Grass9 2
+    3300408: Grass9 3
+    4300000: Fence
+    4300002: Base
+    4300004: Grass
+    4300006: Grass1
+    4300008: Grass2
+    4300010: Grass3
+    4300012: Grass4
+    4300014: Grass5
+    4300016: Grass6
+    4300018: Grass7
+    4300020: Grass8
+    4300022: Grass9
+    4300024: Grass10
+    4300026: Grass11
+    4300028: Grass12
+    4300030: Grass13
+    4300032: Grass14
+    4300034: Grass15
+    4300036: Grass16
+    4300038: Grass17
+    4300040: Grass18
+    4300042: Grass19
+    4300044: Grass20
+    4300046: Grass21
+    4300048: Grass22
+    4300050: Grass23
+    4300052: Grass24
+    4300054: Grass25
+    4300056: Grass26
+    4300058: Grass27
+    4300060: Grass29
+    4300062: Grass30
+    4300064: Grass31
+    4300066: Grass32
+    4300068: Grass33
+    4300070: Grass34
+    4300072: Grass35
+    4300074: Grass36
+    4300076: Grass37
+    4300078: Grass38
+    4300080: Grass39
+    4300082: Grass40
+    4300084: Grass41
+    4300086: Grass42
+    4300088: Grass43
+    4300090: Grass44
+    4300092: Grass45
+    4300094: Grass46
+    4300096: Grass47
+    4300098: Grass48
+    4300100: Grass49
+    4300102: Grass50
+    4300104: Grass51
+    4300106: Grass52
+    4300108: Grass53
+    4300110: Grass54
+    4300112: Grass55
+    4300114: Grass56
+    4300116: Grass57
+    4300118: Grass
+    4300120: Grass1
+    4300122: Grass2
+    4300124: Grass3
+    4300126: Grass4
+    4300128: Grass5
+    4300130: Grass6
+    4300132: Grass7
+    4300134: Grass8
+    4300136: Grass9
+    4300138: Grass10
+    4300140: Grass11
+    4300142: Grass12
+    4300144: Grass14
+    4300146: Grass15
+    4300148: Grass16
+    4300150: Grass17
+    4300152: Grass18
+    4300154: Grass19
+    4300156: Grass20
+    4300158: Grass22
+    4300160: Grass23
+    4300162: Grass25
+    4300164: Grass26
+    4300166: Grass27
+    4300168: Grass28
+    4300170: Grass29
+    4300172: Grass30
+    4300174: Grass31
+    4300176: Grass32
+    4300178: Grass33
+    4300180: Grass34
+    4300182: Grass35
+    4300184: Grass36
+    4300186: Grass37
+    4300188: Grass38
+    4300190: Grass39
+    4300192: Grass
+    4300194: Grass1
+    4300196: Grass2
+    4300198: Grass4
+    4300200: Grass5
+    4300202: Grass6
+    4300204: Grass8
+    4300206: Grass9
+    4300208: Grass10
+    4300210: Grass11
+    4300212: Grass12
+    4300214: Grass13
+    4300216: Grass14
+    4300218: Grass15
+    4300220: Grass16
+    4300222: Grass17
+    4300224: Grass18
+    4300226: Grass19
+    4300228: Grass20
+    4300230: Grass21
+    4300232: Grass22
+    4300234: Grass23
+    4300236: Grass24
+    4300238: Grass25
+    4300240: Grass26
+    4300242: Grass27
+    4300244: Grass28
+    4300246: Grass29
+    4300248: Grass30
+    4300250: Grass31
+    4300252: Grass32
+    4300254: Grass33
+    4300256: Grass34
+    4300258: Grass35
+    4300260: Grass36
+    4300262: Grass37
+    4300264: Grass39
+    4300266: Grass
+    4300268: Grass1
+    4300270: Grass2
+    4300272: Grass4
+    4300274: Grass5
+    4300276: Grass7
+    4300278: Grass8
+    4300280: Grass10
+    4300282: Grass11
+    4300284: Grass14
+    4300286: Grass16
+    4300288: Grass17
+    4300290: Grass19
+    4300292: Grass20
+    4300294: Grass21
+    4300296: Grass22
+    4300298: Grass25
+    4300300: Grass26
+    4300302: Grass27
+    4300304: Grass28
+    4300306: Grass29
+    4300308: Grass31
+    4300310: Grass32
+    4300312: Grass33
+    4300314: Grass35
+    4300316: Grass36
+    4300318: Grass37
+    4300320: Grass38
+    4300322: Grass39
+    4300324: Grass
+    4300326: Grass1
+    4300328: Grass2
+    4300330: Grass3
+    4300332: Grass4
+    4300334: Grass5
+    4300336: Grass6
+    4300338: Grass7
+    4300340: Grass8
+    4300342: Grass9
+    4300344: Grass10
+    4300346: Grass11
+    4300348: Grass12
+    4300350: Grass13
+    4300352: Grass14
+    4300354: Grass15
+    4300356: Grass16
+    4300358: Grass17
+    4300360: Grass18
+    4300362: Grass19
+    4300364: Grass20
+    4300366: Grass21
+    4300368: Grass22
+    4300370: Grass23
+    4300372: Grass24
+    4300374: Grass25
+    4300376: Grass27
+    4300378: Grass28
+    4300380: Grass29
+    4300382: Grass30
+    4300384: Grass31
+    4300386: Grass32
+    4300388: Grass33
+    4300390: Grass34
+    4300392: Grass35
+    4300394: Grass36
+    4300396: Grass38
+    4300398: Grass39
+    4300400: Grass58
+    4300402: Grass59
+    4300404: Grass60
+    4300406: Grass61
+    4300408: Fence_Reversed
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass_Material
+    second: {fileID: 2100000, guid: 77f713eb10bf0db439c385db7e076850, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hut_Material
+    second: {fileID: 2100000, guid: 2050b3cd623fce44592912560398fe7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 77f713eb10bf0db439c385db7e076850, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 30
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

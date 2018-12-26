@@ -1,0 +1,59 @@
+image: registry.gitlab.com/plasticmoose/unity-docker:latest
+
+stages:
+    - build
+    - deploy
+
+build:win32:
+    stage: build
+    before_script:
+        - mkdir -p /root/.cache/unity3d
+        - mkdir -p ${PWD}/Build/win32
+    script:
+        - /opt/Unity/Editor/Unity -projectPath ${PWD} -batchmode -nographics -quit -logFile ${PWD}/Build/win32/build.log -buildWindowsPlayer ${PWD}/Build/win32/helpinghand.exe
+    only:
+        - master
+    artifacts:
+        paths:
+            #- ${PWD}/Build/win32/build.log
+            - ${PWD}/Build/win32
+
+upload:win32:
+    stage: deploy
+    dependencies:
+        - build:win32
+    image: registry.gitlab.com/jonasmyhrrefseth/gdrive-docker:noentry
+    script:
+        - export CI_BUILD_DATE=$(date -u +%Y%m%d%H%M%S)
+        - export CI_COMMIT_SHA_SHORT=$(CI_COMMIT_SHA=${CI_COMMIT_SHA} && echo ${CI_COMMIT_SHA:0:8})
+        - export ZIPFILE=$(echo helpinghand_win32_${CI_BUILD_DATE}_${CI_COMMIT_SHA_SHORT}.zip)
+        - rm -fdr Build/win32/build.log
+        - zip -r ${ZIPFILE} Build/win32
+        - gdrive upload --refresh-token ${GDRIVE_REFRESH_TOKEN} --parent ${GDRIVE_PM_AUTO_BUILD_WIN32_FOLDER} ${ZIPFILE}
+
+build:macOS:
+    stage: build
+    before_script:
+        - mkdir -p /root/.cache/unity3d
+        - mkdir -p ${PWD}/Build/macOS
+    script:
+        - /opt/Unity/Editor/Unity -projectPath ${PWD} -batchmode -nographics -quit -logFile ${PWD}/Build/macOS/build.log -buildOSXUniversalPlayer ${PWD}/Build/macOS/helpinghand.app
+    only:
+        - master
+    artifacts:
+        paths:
+            #- ${PWD}/Build/macOS/build.log
+            - ${PWD}/Build/macOS
+            
+upload:macOS:
+    stage: deploy
+    dependencies:
+        - build:macOS
+    image: registry.gitlab.com/jonasmyhrrefseth/gdrive-docker:noentry
+    script:
+        - export CI_BUILD_DATE=$(date -u +%Y%m%d%H%M%S)
+        - export CI_COMMIT_SHA_SHORT=$(CI_COMMIT_SHA=${CI_COMMIT_SHA} && echo ${CI_COMMIT_SHA:0:8})
+        - export ZIPFILE=$(echo helpinghand_macOS_${CI_BUILD_DATE}_${CI_COMMIT_SHA_SHORT}.zip)
+        - rm -fdr Build/macOS/build.log
+        - zip -r ${ZIPFILE} Build/macOS
+        - gdrive upload --refresh-token ${GDRIVE_REFRESH_TOKEN} --parent ${GDRIVE_PM_AUTO_BUILD_MACOS_FOLDER} ${ZIPFILE}

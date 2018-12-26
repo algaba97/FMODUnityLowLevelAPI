@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 644b9a135bc10f2419c7a95dbb7e9bdf
+timeCreated: 1520345152
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arrow_Pipe
+    100002: Arrow_Pipe1
+    100004: Arrow_Pipe10
+    100006: Arrow_Pipe11
+    100008: Arrow_Pipe12
+    100010: Arrow_Pipe13
+    100012: Arrow_Pipe14
+    100014: Arrow_Pipe15
+    100016: Arrow_Pipe4
+    100018: Arrow_Pipe5
+    100020: Arrow_Pipe7
+    100022: Arrow_Pipe8
+    100024: Arrow_Pipes
+    100026: //RootNode
+    100028: Base
+    100030: Brick1
+    100032: Brick1 1
+    100034: Brick10
+    100036: Brick10 1
+    100038: Brick2
+    100040: Brick2 1
+    100042: Brick3
+    100044: Brick3 1
+    100046: Brick4
+    100048: Brick4 1
+    100050: Brick5
+    100052: Brick5 1
+    100054: Brick6
+    100056: Brick6 1
+    100058: Brick7
+    100060: Brick7 1
+    100062: Brick8
+    100064: Brick8 1
+    100066: Brick9
+    100068: Brick9 1
+    100070: LowerBrick_GRP
+    100072: UpperBrick_GRP
+    400000: Arrow_Pipe
+    400002: Arrow_Pipe1
+    400004: Arrow_Pipe10
+    400006: Arrow_Pipe11
+    400008: Arrow_Pipe12
+    400010: Arrow_Pipe13
+    400012: Arrow_Pipe14
+    400014: Arrow_Pipe15
+    400016: Arrow_Pipe4
+    400018: Arrow_Pipe5
+    400020: Arrow_Pipe7
+    400022: Arrow_Pipe8
+    400024: Arrow_Pipes
+    400026: //RootNode
+    400028: Base
+    400030: Brick1
+    400032: Brick1 1
+    400034: Brick10
+    400036: Brick10 1
+    400038: Brick2
+    400040: Brick2 1
+    400042: Brick3
+    400044: Brick3 1
+    400046: Brick4
+    400048: Brick4 1
+    400050: Brick5
+    400052: Brick5 1
+    400054: Brick6
+    400056: Brick6 1
+    400058: Brick7
+    400060: Brick7 1
+    400062: Brick8
+    400064: Brick8 1
+    400066: Brick9
+    400068: Brick9 1
+    400070: LowerBrick_GRP
+    400072: UpperBrick_GRP
+    2300000: Arrow_Pipe
+    2300002: Arrow_Pipe1
+    2300004: Arrow_Pipe10
+    2300006: Arrow_Pipe11
+    2300008: Arrow_Pipe12
+    2300010: Arrow_Pipe13
+    2300012: Arrow_Pipe14
+    2300014: Arrow_Pipe15
+    2300016: Arrow_Pipe4
+    2300018: Arrow_Pipe5
+    2300020: Arrow_Pipe7
+    2300022: Arrow_Pipe8
+    2300024: Base
+    2300026: Brick1
+    2300028: Brick1 1
+    2300030: Brick10
+    2300032: Brick10 1
+    2300034: Brick2
+    2300036: Brick2 1
+    2300038: Brick3
+    2300040: Brick3 1
+    2300042: Brick4
+    2300044: Brick4 1
+    2300046: Brick5
+    2300048: Brick5 1
+    2300050: Brick6
+    2300052: Brick6 1
+    2300054: Brick7
+    2300056: Brick7 1
+    2300058: Brick8
+    2300060: Brick8 1
+    2300062: Brick9
+    2300064: Brick9 1
+    3300000: Arrow_Pipe
+    3300002: Arrow_Pipe1
+    3300004: Arrow_Pipe10
+    3300006: Arrow_Pipe11
+    3300008: Arrow_Pipe12
+    3300010: Arrow_Pipe13
+    3300012: Arrow_Pipe14
+    3300014: Arrow_Pipe15
+    3300016: Arrow_Pipe4
+    3300018: Arrow_Pipe5
+    3300020: Arrow_Pipe7
+    3300022: Arrow_Pipe8
+    3300024: Base
+    3300026: Brick1
+    3300028: Brick1 1
+    3300030: Brick10
+    3300032: Brick10 1
+    3300034: Brick2
+    3300036: Brick2 1
+    3300038: Brick3
+    3300040: Brick3 1
+    3300042: Brick4
+    3300044: Brick4 1
+    3300046: Brick5
+    3300048: Brick5 1
+    3300050: Brick6
+    3300052: Brick6 1
+    3300054: Brick7
+    3300056: Brick7 1
+    3300058: Brick8
+    3300060: Brick8 1
+    3300062: Brick9
+    3300064: Brick9 1
+    4300000: Base
+    4300002: Arrow_Pipe
+    4300004: Arrow_Pipe1
+    4300006: Arrow_Pipe4
+    4300008: Arrow_Pipe5
+    4300010: Arrow_Pipe7
+    4300012: Arrow_Pipe8
+    4300014: Arrow_Pipe10
+    4300016: Arrow_Pipe11
+    4300018: Arrow_Pipe12
+    4300020: Arrow_Pipe13
+    4300022: Arrow_Pipe14
+    4300024: Arrow_Pipe15
+    4300026: Brick1
+    4300028: Brick2
+    4300030: Brick3
+    4300032: Brick4
+    4300034: Brick5
+    4300036: Brick6
+    4300038: Brick7
+    4300040: Brick8
+    4300042: Brick9
+    4300044: Brick10
+    4300046: Brick1
+    4300048: Brick2
+    4300050: Brick3
+    4300052: Brick4
+    4300054: Brick5
+    4300056: Brick6
+    4300058: Brick7
+    4300060: Brick8
+    4300062: Brick9
+    4300064: Brick10
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 0cccf4f9f4d473844a4ff69d471b77e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: 5f417ee661b527b4b9bc7bfe215c68a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: a699878ad4f4a3449ba300fa0673cf37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 1864aece58af27f44952817afe1d523a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert6
+    second: {fileID: 2100000, guid: 3a20a7887c0007a41a0ac90c3da0780b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 30
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
