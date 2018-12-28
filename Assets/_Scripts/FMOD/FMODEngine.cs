@@ -1,18 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 
 using UnityEngine;
 
 public class FMODEngine : MonoBehaviour
 {
 
-    FMOD.System system;
-    FMOD.Sound sonido;
-    FMOD.Channel channel;
+    FMOD.System system;//a
+    List <FMOD.Sound> sonido;//cada sonido tendrá un canal
+    List<FMOD.Sound> sonidoJugador; // todos los sonidos irán en el canal 0;
+    List<FMOD.Channel> channel;
+
 
     // Use this for initialization
     void Awake()
     {
+        //inicializamos las listas
+        sonido = new List<FMOD.Sound>();
+        sonidoJugador = new List<FMOD.Sound>();
+        channel = new List<FMOD.Channel>();
+
         FMOD.RESULT result;
         result = FMOD.Factory.System_Create(out system); // Hay que comprobar que inicializa
         //result = system->init(128, FMOD_INIT_NORMAL, 0);
@@ -22,7 +30,7 @@ public class FMODEngine : MonoBehaviour
         result = system.set3DSettings(1.0f, 1.0f, 1.0f);
         ERRCHECK(result);
 
-
+        //creamos el sonido 0 que será del jugador 
         string cadena = Application.dataPath + "/Sounds/Bowhit.wav";
         Debug.Log(cadena);
         CreateSound(cadena);
@@ -31,31 +39,43 @@ public class FMODEngine : MonoBehaviour
 
     }
 
-    void CreateSound(string cadena)
+    int CreateSound(string cadena)//creamos sonido y canal devolviendo el numero para que los objetos solo tengan que saber que numero son
     {
-        //_system->createSound(
-        //ruta, // path al archivo de sonido
-        //FMOD_DEFAULT, // valores (por defecto en este caso: sin loop, 2D)
-        //0, // informacion adicional (nada en este caso)
-        //&sonido);
-        system.createSound(cadena, FMOD.MODE._3D, out sonido);
+        FMOD.Sound aux = new FMOD.Sound();
+        sonido.Add(aux);
+        int length = sonido.Count;
+        //creamos sonido y canal 
+        system.createSound(cadena, FMOD.MODE._3D, out aux);
+        FMOD.Channel aux2 = new FMOD.Channel();
+        channel.Add(aux2);
 
-
+        return length;
     }
-    void SetPosition()
+
+    int CreateSoundPlayer(string cadena)//creamos sonido devolviendo el numero para que los objetos solo tengan que saber que numero son
+    {
+        FMOD.Sound aux = new FMOD.Sound();
+        sonidoJugador.Add(aux);
+        int length = sonido.Count;
+        //creamos sonido y canal 
+        system.createSound(cadena, FMOD.MODE._3D, out aux);
+        return length;
+    }
+
+    void SetPosition(int number,float x, float y ,float z)
     {
        
         FMOD.VECTOR pos;
-        pos.x = -10.0f;
-        pos.y = 0.0f;
-        pos.z = 0.0f;
+        pos.x = x;
+        pos.y = y;
+        pos.z = z;
         FMOD.VECTOR vel;
         vel.x = 0.0f;
         vel.y = 0.0f;
         vel.z = 0.0F;
 
         //FSev.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject, playerPos)); 
-        ERRCHECK(channel.set3DAttributes(ref pos, ref vel, ref vel));
+        ERRCHECK(channel[number].set3DAttributes(ref pos, ref vel, ref vel));
 
     }
     void Play()
@@ -67,16 +87,15 @@ public class FMODEngine : MonoBehaviour
         //&channel);
         FMOD.ChannelGroup aux;
         system.getMasterChannelGroup(out aux);
-        system.playSound(sonido, aux, false, out channel);
+      ///  system.playSound(sonido, aux, false, out channel);
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        SetPosition();
         Play();
         system.update();
-        Debug.Log("update");
+       // Debug.Log("update");
 
     }
 
