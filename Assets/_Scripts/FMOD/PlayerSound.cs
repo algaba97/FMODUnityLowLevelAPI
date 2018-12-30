@@ -20,7 +20,7 @@ public class PlayerSound : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Play (int number) {
+	public void Play (int number) {
 
         FMODengine.PlayPlayer(number);
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 using PlasticMoose.Minecart;
 public class DeathController : MonoBehaviour
 {
-    public FMODEngine engine;
+    public PlayerSound death;
     public SceneAssistant sceneAssistant;
     public int health;
     public GameObject healthBar;
@@ -22,6 +22,7 @@ public class DeathController : MonoBehaviour
         EventManager.instance.StartListening("EVT_Player_TriggerDeath", KillPlayer);
         healthBar = GameObject.Find("Panel");
 		move = gameObject.GetComponent<Movement> ();
+        death = gameObject.GetComponent<PlayerSound>();
     }
 
     void Update()
@@ -45,6 +46,7 @@ public class DeathController : MonoBehaviour
 				GameObject.Find ("GameManager").GetComponent<vibration> ().vibrate (0.5f);
 			}
             health--;
+            death.Play(2);
 			move.CurrentSpeed = move.CurrentSpeed - speedLoss;
             if (healthBar != null)
                 healthBar.transform.GetChild(health + 4).gameObject.SetActive(false);
@@ -53,6 +55,7 @@ public class DeathController : MonoBehaviour
 
         if (health <= 0)
         {
+            death.FMODengine.Play(2);
             print("Died");
 			if (sceneAssistant != null)
 				sceneAssistant.Restart ();

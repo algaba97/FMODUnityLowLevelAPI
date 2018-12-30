@@ -47,6 +47,7 @@ public class FMODEngine : MonoBehaviour
        
         //creamos sonido y canal 
         if (!loop) system.createSound(Cadena, FMOD.MODE._3D, out aux);
+       
 
         else ERRCHECK(system.createSound(Cadena, FMOD.MODE._3D | FMOD.MODE.LOOP_NORMAL, out aux));
         sonido.Add(aux);
@@ -63,8 +64,8 @@ public class FMODEngine : MonoBehaviour
         FMOD.Sound aux = new FMOD.Sound();
         
         //creamos sonido y canal 
-        if (!loop) system.createSound(Cadena, FMOD.MODE._3D, out aux);
-        else system.createSound(Cadena, FMOD.MODE._2D, out aux);
+        if (!loop) system.createSound(Cadena, FMOD.MODE._2D, out aux);
+        else system.createSound(Cadena, FMOD.MODE._2D | FMOD.MODE.LOOP_NORMAL, out aux);
 
         sonidoJugador.Add(aux);
         int length = sonido.Count;

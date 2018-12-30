@@ -14,6 +14,7 @@ namespace PlasticMoose.Minecart
 		public float gumDum;
 		public bool retract; 
 		public float elapsedTime;
+
 		void Update()
 		{
 			if (shouldReverse) 
