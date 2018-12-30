@@ -16,7 +16,7 @@ public class SCR_Minecart_VisualController : MonoBehaviour
         EventManager.instance.StartListening("EVT_CartTilt_Left", TiltLeft);
         EventManager.instance.StartListening("EVT_CartTilt_BackLeft", TiltBackLeft);
 
-        Debug.Log("called");
+
     }
     void OnDestroy()
     {
