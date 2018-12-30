@@ -4,7 +4,7 @@ using UnityEngine;
 using PlasticMoose.Minecart;
 public class DeathController : MonoBehaviour
 {
-
+    public FMODEngine engine;
     public SceneAssistant sceneAssistant;
     public int health;
     public GameObject healthBar;
