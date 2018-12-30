@@ -26,7 +26,7 @@ public class PlacePlayer : MonoBehaviour {
 			GameObject playerPos = GameObject.Find("PlayerPos");
 			if (playerPos != null)
 			{
-				Debug.Log ("in");
+
 				player.position = playerPos.transform.position;
 				player.rotation = playerPos.transform.rotation;
 				player.parent = playerPos.transform;

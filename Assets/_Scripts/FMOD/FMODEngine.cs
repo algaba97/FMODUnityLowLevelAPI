@@ -11,6 +11,7 @@ public class FMODEngine : MonoBehaviour
     List <FMOD.Sound> sonido;//cada sonido tendrá un canal
     List<FMOD.Sound> sonidoJugador; // todos los sonidos irán en el canal 0;
     List<FMOD.Channel> channel;
+    FMOD.Channel channelPlayer;
     public Transform Player;
 
     // Use this for initialization
@@ -20,21 +21,20 @@ public class FMODEngine : MonoBehaviour
         sonido = new List<FMOD.Sound>();
         sonidoJugador = new List<FMOD.Sound>();
         channel = new List<FMOD.Channel>();
+        channelPlayer = new FMOD.Channel();
 
         FMOD.RESULT result;
         result = FMOD.Factory.System_Create(out system); // Hay que comprobar que inicializa
         ERRCHECK(result);
         //result = system->init(128, FMOD_INIT_NORMAL, 0);
         System.IntPtr a = System.IntPtr.Zero;
-        Debug.Log("Aqui");
         result = system.init(128, FMOD.INITFLAGS.NORMAL, a);
         ERRCHECK(result);
-        Debug.Log("Aqui");
         result = system.set3DSettings(1.0f, 1.0f, 1.0f);
         ERRCHECK(result);
 
-        //creamos el canal 0 para el sonido del jugador
        
+        
 
 
 
@@ -61,34 +61,50 @@ public class FMODEngine : MonoBehaviour
     {
         string Cadena = Application.dataPath + "/Sounds/" + cadena;
         FMOD.Sound aux = new FMOD.Sound();
-        sonidoJugador.Add(aux);
-        int length = sonido.Count;
+        
         //creamos sonido y canal 
         if (!loop) system.createSound(Cadena, FMOD.MODE._3D, out aux);
-        else system.createSound(Cadena, FMOD.MODE._3D | FMOD.MODE.LOOP_NORMAL, out aux);
+        else system.createSound(Cadena, FMOD.MODE._2D, out aux);
+
+        sonidoJugador.Add(aux);
+        int length = sonido.Count;
 
         return length-1;
     }
 
     public void SetPosition(int number,float x, float y ,float z)
     {
-        FMOD.Channel aux2 = channel[number];
-
         FMOD.VECTOR pos;
 
         FMOD.VECTOR vel;
-        aux2.get3DAttributes(out pos, out vel, out vel);
-        pos.x = x;
-        pos.y = y;
-        pos.z = z;
-      
+        if (number != -1)
+        {
+            FMOD.Channel aux2 = channel[number];
 
-        Debug.Log(number);
-        Debug.Log(channel.Count);
-        Debug.Log(channel[number]);
 
-        //FSev.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject, playerPos)); 
-        ERRCHECK(aux2.set3DAttributes(ref pos, ref vel, ref vel));
+           
+            aux2.get3DAttributes(out pos, out vel, out vel);
+            pos.x = x;
+            pos.y = y;
+            pos.z = z;
+
+
+            Debug.Log(number);
+            Debug.Log(channel.Count);
+            Debug.Log(channel[number]);
+
+            //FSev.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject, playerPos)); 
+            ERRCHECK(channel[number].set3DAttributes(ref pos, ref vel, ref vel));
+        }
+        else
+        {
+            ERRCHECK(channelPlayer.get3DAttributes(out pos, out vel, out vel));
+            pos.x = x;
+            pos.y = y;
+            pos.z = z;
+            ERRCHECK(channelPlayer.set3DAttributes(ref pos, ref vel, ref vel));
+
+        }
 
     }
 
@@ -106,11 +122,22 @@ public class FMODEngine : MonoBehaviour
         system.playSound(sonido[numero], aux, false, out aux2);
         channel[numero] = aux2;
     }
+    public void PlayPlayer(int numero)
+    {
+        Debug.Log("PlayPlayer");
+      
+        FMOD.ChannelGroup aux;
+        system.getMasterChannelGroup(out aux);
+        system.playSound(sonidoJugador[numero], aux, false, out channelPlayer);
+        
+    }
+
+
 
     // Update is called once per frame
     void LateUpdate()
     {
-
+       // SetPosition(0, Player.position.x, Player.position.y, Player.position.z);
         moveListener(Player.position.x, Player.position.y, Player.position.z);
         system.update();
        // Debug.Log("update");
