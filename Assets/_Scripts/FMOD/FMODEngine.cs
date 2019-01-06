@@ -151,7 +151,34 @@ public class FMODEngine : MonoBehaviour
         ERRCHECK(eventInstance.start());
         setBank(1.5f);
     }
+    public void createGeometry(float directOclusion,float reverbOclusion,FMOD.VECTOR[] _verts)
+    {
+        FMOD.Geometry geometry;
+        ERRCHECK(system.createGeometry(1, 4, out geometry));
 
+        FMOD.VECTOR[] verts = new FMOD.VECTOR[4];
+
+
+        verts[0].x = _verts[0].x;
+        verts[0].y = _verts[0].y;
+        verts[0].z = _verts[0].z;
+
+        verts[1].x = _verts[1].x;
+        verts[1].y = _verts[1].y;
+        verts[1].z = _verts[1].z;
+
+        verts[2].x = _verts[2].x;
+        verts[2].y = _verts[2].y;
+        verts[2].z = _verts[2].z;
+
+        verts[3].x = _verts[3].x;
+        verts[3].y = _verts[3].y;
+        verts[3].z = _verts[3].z;
+        int polygonIndex = 0;
+       ERRCHECK(geometry.addPolygon(directOclusion, reverbOclusion, true, 4, verts, out polygonIndex));
+
+
+    }
     public void setBank(float value)
     {
         ERRCHECK(eventInstance.setParameterValue("fHealth",value));
