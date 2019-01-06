@@ -8,12 +8,17 @@ public class FMODEngine : MonoBehaviour
 {
 
     FMOD.System system;//a
+    FMOD.Studio.System system2;
     List <FMOD.Sound> sonido;//cada sonido tendrá un canal
     List<FMOD.Sound> sonidoJugador; // todos los sonidos irán en el canal 0;
     List<FMOD.Channel> channel;
     FMOD.Channel channelPlayer;
+    FMOD.Reverb3D reverb3d;
     public Transform Player;
-
+    FMOD.Studio.EventInstance eventInstance;
+    FMOD.Studio.Bank stringsBank;
+    FMOD.Studio.Bank masterBank;
+    FMOD.Studio.Bank vidaBank;
     // Use this for initialization
     void Awake()
     {
@@ -33,8 +38,9 @@ public class FMODEngine : MonoBehaviour
         result = system.set3DSettings(1.0f, 1.0f, 1.0f);
         ERRCHECK(result);
 
-       
-        
+        CreateBank();
+
+
 
 
 
@@ -72,6 +78,93 @@ public class FMODEngine : MonoBehaviour
 
         return length-1;
     }
+    public void CreateReverb3d(float min, float max)
+    {
+        ERRCHECK(system.createReverb3D( out reverb3d));
+
+        FMOD.REVERB_PROPERTIES prop2 = FMOD.PRESET.UNDERWATER();
+
+        ERRCHECK(reverb3d.setProperties( ref prop2));
+     
+    }
+
+    public void CreateBank()
+
+
+         
+    {
+        //float fHealth = 0.0f;
+        float fHealth = 0.0f;
+
+        //void* extraDriverData = NULL;
+        //Common_Init(&extraDriverData);
+
+        //FMOD::Studio::System* system = NULL;
+        //ERRCHECK(FMOD::Studio::System::create(&system));
+        ERRCHECK(FMOD.Studio.System.create(out system2));
+        //// The example Studio project is authored for 5.1 sound, so set up the system output mode to match
+        //FMOD::System* lowLevelSystem = NULL;
+        FMOD.System lowLevelSystem;
+        //ERRCHECK(system->getLowLevelSystem(&lowLevelSystem));
+        ERRCHECK(system2.getLowLevelSystem(out lowLevelSystem));
+        //ERRCHECK(lowLevelSystem->setSoftwareFormat(0, FMOD_SPEAKERMODE_5POINT1, 0));
+        ERRCHECK(lowLevelSystem.setSoftwareFormat(0, FMOD.SPEAKERMODE._5POINT1, 0));
+
+        //ERRCHECK(system->initialize(1024, FMOD_STUDIO_INIT_NORMAL, FMOD_INIT_NORMAL, extraDriverData));
+        System.IntPtr a = System.IntPtr.Zero;
+        system2.initialize(1024, FMOD.Studio.INITFLAGS.NORMAL, FMOD.INITFLAGS.NORMAL, a);
+
+      
+        ERRCHECK(system2.loadBankFile(Application.dataPath + "/Sounds/Master Bank.bank", FMOD.Studio.LOAD_BANK_FLAGS.NORMAL, out masterBank));
+
+     
+        ERRCHECK(system2.loadBankFile(Application.dataPath + "/Sounds/Master Bank.strings.bank", FMOD.Studio.LOAD_BANK_FLAGS.NORMAL, out stringsBank));
+        
+        //FMOD.SOUND_TYPE.Ban
+        
+        system2.loadBankFile(Application.dataPath + "/Sounds/vida.bank", FMOD.Studio.LOAD_BANK_FLAGS.NORMAL, out vidaBank);
+        //FMOD::Studio::EventDescription* loopingDescription = NULL;
+        //ERRCHECK(system->getEvent("event:/vida", &loopingDescription));
+        FMOD.Studio.EventDescription loopingDescription;
+        ERRCHECK(system2.getEvent("event:/vida", out loopingDescription));
+
+        //FMOD::Studio::EventInstance* loopingInstance = NULL;
+        //ERRCHECK(loopingDescription->createInstance(&loopingInstance));
+        FMOD.Studio.EventInstance loopingInstance;
+         ERRCHECK(loopingDescription.createInstance(out loopingInstance));
+        //// Get the Single event
+        //FMOD::Studio::EventDescription* vidaDescription = NULL;
+        //ERRCHECK(system->getEvent("event:/vida", &vidaDescription));
+        FMOD.Studio.EventDescription  vidaDescription;
+        ERRCHECK(system2.getEvent("event:/vida", out vidaDescription));
+
+        //// One-shot event
+        //FMOD::Studio::EventInstance* eventInstance = NULL;
+        //ERRCHECK(vidaDescription->createInstance(&eventInstance));
+
+        
+        ERRCHECK(vidaDescription.createInstance(out eventInstance));
+
+        //// Start loading sample data and keep it in memory
+        //ERRCHECK(vidaDescription->loadSampleData());
+        ERRCHECK(vidaDescription.loadSampleData());
+        ERRCHECK(eventInstance.start());
+        setBank(1.5f);
+    }
+
+    public void setBank(float value)
+    {
+        ERRCHECK(eventInstance.setParameterValue("fHealth",value));
+    }
+    public void setRever3d(float min, float max,float x , float y, float z)
+    {
+        FMOD.VECTOR pos = new FMOD.VECTOR();
+        float minx = .0f;
+        float maxx = .0f;
+        reverb3d.get3DAttributes(ref pos,ref minx, ref maxx);
+
+        ERRCHECK(reverb3d.set3DAttributes(ref pos, minx, maxx));
+    }
 
     public void SetPosition(int number,float x, float y ,float z)
     {
@@ -90,9 +183,7 @@ public class FMODEngine : MonoBehaviour
             pos.z = z;
 
 
-            Debug.Log(number);
-            Debug.Log(channel.Count);
-            Debug.Log(channel[number]);
+            
 
             //FSev.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject, playerPos)); 
             ERRCHECK(channel[number].set3DAttributes(ref pos, ref vel, ref vel));
@@ -141,6 +232,7 @@ public class FMODEngine : MonoBehaviour
        // SetPosition(0, Player.position.x, Player.position.y, Player.position.z);
         moveListener(Player.position.x, Player.position.y, Player.position.z);
         system.update();
+        system2.update();
        // Debug.Log("update");
 
     }
@@ -170,5 +262,10 @@ public class FMODEngine : MonoBehaviour
         sonido.Clear();//cada sonido tendrá un canal
         sonidoJugador.Clear(); // todos los sonidos irán en el canal 0;
         channel.Clear();
+        system2.release();
+        vidaBank.unload();
+        stringsBank.unload();
+        masterBank.unload();
+
     }
 }
