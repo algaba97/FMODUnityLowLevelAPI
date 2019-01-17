@@ -89,12 +89,9 @@ public class FMODEngine : MonoBehaviour
     }
 
     public void CreateBank()
-
-
-         
     {
         //float fHealth = 0.0f;
-        float fHealth = 0.0f;
+        float fHealth = 3.0f;
 
         //void* extraDriverData = NULL;
         //Common_Init(&extraDriverData);
@@ -149,7 +146,8 @@ public class FMODEngine : MonoBehaviour
         //ERRCHECK(vidaDescription->loadSampleData());
         ERRCHECK(vidaDescription.loadSampleData());
         ERRCHECK(eventInstance.start());
-        setBank(1.5f);
+        setBank(3.0f);
+
     }
     public void createGeometry(float directOclusion,float reverbOclusion,FMOD.VECTOR[] _verts)
     {
